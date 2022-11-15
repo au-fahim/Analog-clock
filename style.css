@@ -24,7 +24,7 @@
 .analog-clk {
   width: 20rem;
   height: 20rem;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background: #ffffffdb url(./img/clock.png);
@@ -104,4 +104,49 @@
   background-color: #ff6767;
   z-index: 12;
   border-radius: 6px 6px 0 0;
+}
+
+/* ### ### ### ### RESPONSIVE CSS ### ### ### ### */
+
+@media only screen and (max-width: 600px) {
+  .analog-clk {
+    width: 12rem;
+    height: 12rem;
+    border: 0px solid var(--clr-white);
+  }
+
+  .analog-clk::before {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .sec,
+  .se {
+    height: 3rem;
+    width: 3rem;
+  }
+  .se::before {
+    height: 6.3rem;
+    width: 0.1rem;
+  }
+
+  .hour,
+  .hr {
+  height: 6rem;
+  width: 6rem;
+  }
+  .hr::before {
+  height: 3rem;
+  width: 0.4rem;
+  }
+
+  .min,
+  .mn {
+  height: 8rem;
+  width: 8rem;
+  }
+  .mn::before {
+  height: 4rem;
+  width: 0.2rem;
+  }
 }
