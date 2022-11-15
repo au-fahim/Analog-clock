@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--clr-white) url(/img/clock.png);
+  background: #ffffffdb url(./img/clock.png);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
